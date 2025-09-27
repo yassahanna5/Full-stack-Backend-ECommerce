@@ -50,7 +50,7 @@ router.get(
     // يمكنك استخدام JWT هنا إذا كنت تريد token أكثر أماناً
     const token = "google-auth-token"; // استبدل هذا ب token حقيقي
     res.redirect(
-      `http://localhost:5173/google-login?token=${token}&id=${user.id}&name=${user.name}&email=${user.email}`
+      `https://oneprodex5.netlify.app/google-login?token=${token}&id=${user.id}&name=${user.name}&email=${user.email}`
     );
   }
 );
